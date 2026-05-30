@@ -10,7 +10,7 @@ class Settings:
     app_env: str = os.getenv("APP_ENV", "development")
     database_url: str = os.getenv(
         "DATABASE_URL",
-        "postgresql://bankguard_user:bankguard_password@localhost:5432/bankguard",
+        "postgresql://postgres:postgres@localhost:5433/bankguard",
     ).replace("postgresql+psycopg://", "postgresql://")
 
 

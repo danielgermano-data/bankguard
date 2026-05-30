@@ -87,6 +87,8 @@ Abra o Docker Desktop antes deste passo.
 docker compose up -d
 ```
 
+O PostgreSQL do projeto usa a porta local `5433` para evitar conflito com instalacoes locais do PostgreSQL na porta padrao `5432`.
+
 ### 2. Criar ambiente Python
 
 ```bash

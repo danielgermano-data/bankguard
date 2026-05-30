@@ -20,7 +20,7 @@ def get_database_url() -> str:
     load_dotenv(ROOT_DIR / ".env")
     return os.getenv(
         "DATABASE_URL",
-        "postgresql://bankguard_user:bankguard_password@localhost:5432/bankguard",
+        "postgresql://postgres:postgres@localhost:5433/bankguard",
     ).replace("postgresql+psycopg://", "postgresql://")
 
 
@@ -28,6 +28,12 @@ def normalize_value(value: Any) -> Any:
     if pd.isna(value):
         return None
     return value
+
+
+def optional_int(value: Any) -> int | None:
+    if value is None or pd.isna(value) or str(value).strip() == "":
+        return None
+    return int(value)
 
 
 def read_csv(name: str) -> pd.DataFrame:
@@ -185,8 +191,8 @@ def load_transacoes(conn: psycopg.Connection, valid_conta_ids: set[int]) -> None
     for index, row in read_csv("transacoes.csv").iterrows():
         payload = row.to_dict()
         valor = float(payload["valor"])
-        origem = int(payload["conta_origem_id"]) if payload.get("conta_origem_id") else None
-        destino = int(payload["conta_destino_id"]) if payload.get("conta_destino_id") else None
+        origem = optional_int(payload.get("conta_origem_id"))
+        destino = optional_int(payload.get("conta_destino_id"))
 
         if valor <= 0:
             reject_record(conn, "transacoes.csv", index + 2, "Valor da transacao deve ser positivo", payload)
