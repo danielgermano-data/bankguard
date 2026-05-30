@@ -1,0 +1,16 @@
+flowchart LR
+    A["API FastAPI"] --> B["Banco Operacional PostgreSQL"]
+    C["Arquivos de Entrada"] --> D["Data Raw"]
+    D --> E["ETL Extract"]
+    B --> E
+    E --> F["Validacao de Qualidade"]
+    F --> G{"Dados validos?"}
+    G -- "Sim" --> H["Transformacao"]
+    G -- "Nao" --> I["Auditoria de Rejeicoes"]
+    H --> J["Data Warehouse PostgreSQL"]
+    J --> K["Fato Transacoes"]
+    J --> L["Dimensoes"]
+    K --> M["Consultas Analiticas"]
+    L --> M
+    M --> N["Endpoints Analiticos"]
+    B --> O["Endpoints Operacionais"]

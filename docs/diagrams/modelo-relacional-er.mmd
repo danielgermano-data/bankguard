@@ -1,0 +1,80 @@
+erDiagram
+    TABELA_CLIENTES ||--o{ TABELA_CONTAS : possui
+    TABELA_AGENCIAS ||--o{ TABELA_CONTAS : atende
+    TABELA_PRODUTOS ||--o{ TABELA_CONTAS : define
+    TABELA_CONTAS ||--o{ TABELA_TRANSACOES : debita
+    TABELA_CONTAS ||--o{ TABELA_TRANSACOES : credita
+
+    TABELA_CLIENTES {
+        bigint cliente_id PK
+        string cpf UK
+        string nome_completo
+        date data_nascimento
+        string email
+        string telefone
+        decimal renda_mensal
+        decimal score_risco
+        string status_cliente
+        date data_cadastro
+        timestamp created_at
+        timestamp updated_at
+    }
+
+    TABELA_AGENCIAS {
+        bigint agencia_id PK
+        string codigo_agencia UK
+        string nome_agencia
+        string tipo_agencia
+        string endereco
+        string cidade
+        string estado
+        boolean ativa
+        timestamp created_at
+        timestamp updated_at
+    }
+
+    TABELA_PRODUTOS {
+        bigint produto_id PK
+        string codigo_produto UK
+        string nome_produto
+        string categoria_produto
+        string descricao
+        boolean ativo
+        timestamp created_at
+        timestamp updated_at
+    }
+
+    TABELA_CONTAS {
+        bigint conta_id PK
+        bigint cliente_id FK
+        bigint agencia_id FK
+        bigint produto_id FK
+        string numero_conta
+        string digito_conta
+        decimal saldo_atual
+        decimal limite_credito
+        string status_conta
+        date data_abertura
+        date data_encerramento
+        timestamp created_at
+        timestamp updated_at
+    }
+
+    TABELA_TRANSACOES {
+        bigint transacao_id PK
+        uuid codigo_transacao UK
+        bigint conta_origem_id FK
+        bigint conta_destino_id FK
+        string tipo_transacao
+        string canal
+        decimal valor
+        string moeda
+        timestamp data_hora_transacao
+        string status_transacao
+        string codigo_autorizacao
+        string descricao
+        string ip_origem
+        string dispositivo_id
+        timestamp data_processamento
+        timestamp created_at
+    }
