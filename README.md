@@ -65,12 +65,11 @@ Entregues:
 9. README profissional e preparo para GitHub.
 10. Preparacao para entrevistas tecnicas.
 
-## Tecnologias Planejadas
+## Tecnologias Utilizadas
 
 - Python
 - PostgreSQL
 - FastAPI
-- SQLAlchemy
 - Pydantic
 - Pandas
 - Pytest
@@ -99,6 +98,14 @@ pip install -e ".[dev]"
 
 ### 3. Executar ETL
 
+No PowerShell, configure a conexao local com o PostgreSQL do Docker:
+
+```bash
+$env:DATABASE_URL = 'postgresql://postgres:postgres@localhost:5433/bankguard'
+```
+
+Depois execute o pipeline:
+
 ```bash
 python -m etl.run_pipeline
 ```
@@ -114,13 +121,13 @@ Esse comando:
 ### 4. Rodar API
 
 ```bash
-uvicorn app.main:app --reload
+uvicorn app.main:app --port 8001
 ```
 
 Swagger:
 
 ```text
-http://localhost:8000/docs
+http://127.0.0.1:8001/docs
 ```
 
 Endpoints principais:
@@ -150,8 +157,42 @@ ruff check .
 - Compilacao Python: OK.
 - Testes automatizados: OK.
 - Lint com Ruff: OK.
+- PostgreSQL conectado via Docker Compose na porta `5433`: OK.
+- ETL executado com sucesso: OK.
+- Swagger em `http://127.0.0.1:8001/docs`: OK.
 - API `/health`: OK.
-- PostgreSQL/ETL completo: depende do Docker Desktop estar aberto.
+- API `/clientes`: OK.
+- API `/transacoes`: OK.
+- API `/transacoes/{transacao_id}`: OK.
+- API `/estatisticas`: OK.
+- API `/fraudes`: OK.
+
+Resultado validado em `/estatisticas`:
+
+```json
+{
+  "resumo": {
+    "total_transacoes": 8,
+    "valor_total": "85721.40",
+    "ticket_medio": "10715.17",
+    "total_suspeitas": 3
+  }
+}
+```
+
+## Fluxo Tecnico Simplificado
+
+```text
+Arquivos CSV
+-> ETL em Python
+-> PostgreSQL operacional
+-> Data Warehouse dimensional
+-> FastAPI
+-> Swagger
+-> JSON
+```
+
+O ETL le os arquivos em `data/raw`, valida dados como CPF e transacoes invalidas, carrega as tabelas operacionais e monta as tabelas dimensionais. A API FastAPI consulta o PostgreSQL e expoe os dados em endpoints REST documentados automaticamente pelo Swagger.
 
 ## Exemplos de Perguntas de Negocio
 
