@@ -60,6 +60,8 @@ Entregues:
 - [Guia iniciante passo a passo](docs/00-guia-iniciante-passo-a-passo.md)
 - [Roteiro de tarefas por etapas](docs/03-roteiro-de-tarefas.md)
 - [Passo a passo por aplicativos](docs/05-passo-a-passo-apps.md)
+- [Preparacao para entrevistas](docs/06-entrevista.md)
+- [Conteudo para LinkedIn](docs/07-linkedin.md)
 - [Arquitetura](docs/01-arquitetura.md)
 - [Modelagem relacional](docs/02-modelagem-relacional.md)
 - [Modelagem dimensional](docs/04-modelagem-dimensional.md)
