@@ -1,5 +1,7 @@
 # BankGuard
 
+[![CI](https://github.com/danieloliveirag29-dot/bankguard/actions/workflows/ci.yml/badge.svg)](https://github.com/danieloliveirag29-dot/bankguard/actions/workflows/ci.yml)
+
 Plataforma de monitoramento e analise de transacoes bancarias.
 
 ## Objetivo
@@ -7,6 +9,19 @@ Plataforma de monitoramento e analise de transacoes bancarias.
 O BankGuard simula um ambiente bancario real para demonstrar praticas de Engenharia de Dados aplicadas a transacoes financeiras, qualidade de dados, modelagem relacional, modelagem dimensional, ETL, analytics e exposicao de dados via API REST.
 
 Este projeto esta sendo construido de forma incremental, fase por fase, com foco em um portfolio profissional para vagas de Engenharia de Dados Junior.
+
+## Resumo Para Recrutadores
+
+O BankGuard demonstra um fluxo completo de Engenharia de Dados aplicado a um dominio bancario: ingestao de dados, validacao de qualidade, persistencia em PostgreSQL, carga em modelo dimensional, consultas analiticas e exposicao via API REST com FastAPI.
+
+Competencias demonstradas:
+
+- Modelagem relacional e dimensional.
+- SQL com joins, agregacoes, CTEs e window functions.
+- ETL em Python com validacoes de qualidade.
+- PostgreSQL com schemas, constraints e indices.
+- API REST com FastAPI e documentacao Swagger.
+- Testes automatizados, lint e CI com GitHub Actions.
 
 ## Fases Entregues
 
@@ -75,6 +90,7 @@ Entregues:
 - Pytest
 - Docker Compose
 - Git/GitHub
+- GitHub Actions
 
 ## Como Executar o MVP
 
@@ -194,6 +210,20 @@ Arquivos CSV
 
 O ETL le os arquivos em `data/raw`, valida dados como CPF e transacoes invalidas, carrega as tabelas operacionais e monta as tabelas dimensionais. A API FastAPI consulta o PostgreSQL e expoe os dados em endpoints REST documentados automaticamente pelo Swagger.
 
+## Como Explicar em Entrevista
+
+Resumo de 1 minuto:
+
+> O BankGuard e uma plataforma de dados bancarios simulada. Eu modelei um banco operacional em PostgreSQL com clientes, contas, agencias, produtos e transacoes. Depois criei um pipeline ETL em Python para ler CSVs, validar qualidade dos dados, carregar o modelo relacional e alimentar um Data Warehouse dimensional com fato e dimensoes. Por fim, expus os dados por uma API FastAPI com Swagger, incluindo endpoints de clientes, transacoes, estatisticas e possiveis fraudes.
+
+Decisoes tecnicas importantes:
+
+- Usei PostgreSQL por ser um banco relacional robusto, com suporte a constraints, indices, CTEs e window functions.
+- Separei modelo operacional e dimensional para diferenciar integridade transacional de consultas analiticas.
+- Validei dados antes da carga para simular cuidados reais de qualidade em ambientes bancarios.
+- Usei FastAPI porque entrega uma API REST tipada e documentacao automatica via Swagger.
+- Configurei testes e lint para mostrar boas praticas de Engenharia de Software.
+
 ## Exemplos de Perguntas de Negocio
 
 - Qual cliente movimentou mais dinheiro?
@@ -203,3 +233,16 @@ O ETL le os arquivos em `data/raw`, valida dados como CPF e transacoes invalidas
 - Quais registros foram rejeitados por qualidade de dados?
 
 As consultas estao em `sql/analytics`, `sql/data_quality` e `sql/performance`.
+
+## Roadmap Tecnico
+
+- Adicionar autenticação JWT nos endpoints.
+- Criar dashboard analitico com Streamlit ou Power BI.
+- Evoluir regras de fraude com score de risco.
+- Adicionar orquestracao com Airflow.
+- Criar migrations versionadas com Alembic.
+- Expandir testes de integracao com PostgreSQL em container.
+
+## Licenca
+
+Este projeto esta licenciado sob a MIT License. Veja o arquivo [LICENSE](LICENSE).
