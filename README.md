@@ -1,6 +1,6 @@
 # BankGuard
 
-[![CI](https://github.com/danieloliveirag29-dot/bankguard/actions/workflows/ci.yml/badge.svg)](https://github.com/danieloliveirag29-dot/bankguard/actions/workflows/ci.yml)
+[![CI](https://github.com/danielgermano-data/bankguard/actions/workflows/ci.yml/badge.svg)](https://github.com/danielgermano-data/bankguard/actions/workflows/ci.yml)
 
 Plataforma de monitoramento e analise de transacoes bancarias.
 
@@ -212,20 +212,6 @@ Arquivos CSV
 
 O ETL le os arquivos em `data/raw`, valida dados como CPF e transacoes invalidas, carrega as tabelas operacionais e monta as tabelas dimensionais. A API FastAPI consulta o PostgreSQL e expoe os dados em endpoints REST documentados automaticamente pelo Swagger.
 
-## Como Explicar em Entrevista
-
-Resumo de 1 minuto:
-
-> O BankGuard e uma plataforma de dados bancarios simulada. Eu modelei um banco operacional em PostgreSQL com clientes, contas, agencias, produtos e transacoes. Depois criei um pipeline ETL em Python para ler CSVs, validar qualidade dos dados, carregar o modelo relacional e alimentar um Data Warehouse dimensional com fato e dimensoes. Por fim, expus os dados por uma API FastAPI com Swagger, incluindo endpoints de clientes, transacoes, estatisticas e possiveis fraudes.
-
-Decisoes tecnicas importantes:
-
-- Usei PostgreSQL por ser um banco relacional robusto, com suporte a constraints, indices, CTEs e window functions.
-- Separei modelo operacional e dimensional para diferenciar integridade transacional de consultas analiticas.
-- Validei dados antes da carga para simular cuidados reais de qualidade em ambientes bancarios.
-- Usei FastAPI porque entrega uma API REST tipada e documentacao automatica via Swagger.
-- Configurei testes e lint para mostrar boas praticas de Engenharia de Software.
-
 ## Exemplos de Perguntas de Negocio
 
 - Qual cliente movimentou mais dinheiro?
@@ -238,7 +224,7 @@ As consultas estao em `sql/analytics`, `sql/data_quality` e `sql/performance`.
 
 ## Roadmap Tecnico
 
-- Adicionar autenticação JWT nos endpoints.
+- Adicionar autenticacao JWT nos endpoints.
 - Criar dashboard analitico com Streamlit ou Power BI.
 - Evoluir regras de fraude com score de risco.
 - Adicionar orquestracao com Airflow.
