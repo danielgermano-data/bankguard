@@ -1,0 +1,29 @@
+<svg width="360" height="194" viewBox="0 0 360 194" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Habilidades Tecnicas">
+  <defs>
+    <linearGradient id="borderGlow" x1="0" y1="0" x2="360" y2="194" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38bdf8"/>
+      <stop offset=".45" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="360" height="194" rx="6" fill="none"/>
+  <rect x="1" y="1" width="358" height="192" rx="5" stroke="url(#borderGlow)" stroke-opacity=".45"/>
+  <path d="M18 20h34M18 20v34M342 174h-34M342 174v-34" stroke="#38bdf8" stroke-opacity=".8" stroke-width="2" filter="url(#softGlow)"/>
+  
+  <text x="32" y="47" fill="#c084fc" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">Habilidades Tecnicas</text>
+  <text x="32" y="62" fill="#38bdf8" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="800" letter-spacing="2">ARSENAL DO PERFIL</text>
+  <rect x="32.00" y="76" width="185.06" height="8" rx="4" fill="#8b5cf6"/>
+  <rect x="217.06" y="76" width="88.94" height="8" rx="4" fill="#38bdf8"/>
+  <circle cx="32" cy="111" r="6" fill="#8b5cf6"/>
+  <text x="46" y="116" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">Python 67.54%</text>
+  <circle cx="200" cy="111" r="6" fill="#38bdf8"/>
+  <text x="214" y="116" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">SQL 32.46%</text>
+
+</svg>

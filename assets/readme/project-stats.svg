@@ -1,0 +1,43 @@
+<svg width="470" height="194" viewBox="0 0 470 194" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Daniel Germano | Sistema GitHub">
+  <defs>
+    <linearGradient id="borderGlow" x1="0" y1="0" x2="470" y2="194" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38bdf8"/>
+      <stop offset=".45" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="470" height="194" rx="6" fill="none"/>
+  <rect x="1" y="1" width="468" height="192" rx="5" stroke="url(#borderGlow)" stroke-opacity=".45"/>
+  <path d="M18 20h34M18 20v34M452 174h-34M452 174v-34" stroke="#38bdf8" stroke-opacity=".8" stroke-width="2" filter="url(#softGlow)"/>
+  
+  <text x="32" y="42" fill="#c084fc" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Daniel Germano | Sistema GitHub</text>
+  <text x="32" y="58" fill="#38bdf8" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="800" letter-spacing="2">STATUS: DATA HUNTER</text>
+  <path stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M40 68l2.2 4.6 5 .7-3.6 3.6.9 5-4.5-2.4-4.5 2.4.9-5L32 73.3l5-.7L40 68z"/>
+  <text x="58" y="82" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Estrelas coletadas:</text>
+  <text x="282" y="82" fill="#38bdf8" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800">0</text>
+  <circle stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="40" cy="97" r="5"/><path stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M32 97h3M45 97h3"/>
+  <text x="58" y="104" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">XP de commits:</text>
+  <text x="282" y="104" fill="#38bdf8" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800">14</text>
+  <circle stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="36" cy="115" r="3"/><circle stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="44" cy="123" r="3"/><path stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M36 118v7M44 113v7M44 113h-4"/>
+  <text x="58" y="126" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Portais PR:</text>
+  <text x="282" y="126" fill="#38bdf8" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800">0</text>
+  <circle stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="40" cy="141" r="7"/><path stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M40 137v5M40 145h.1"/>
+  <text x="58" y="148" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Incidentes rastreados:</text>
+  <text x="282" y="148" fill="#38bdf8" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800">0</text>
+  <path stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M35 157h9l3 3v12H35zM38 161h6M38 165h6M38 169h4"/>
+  <text x="58" y="170" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Projetos liberados:</text>
+  <text x="282" y="170" fill="#38bdf8" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800">3</text>
+  <circle cx="388" cy="112" r="43" fill="#2e1065" fill-opacity=".7"/>
+  <circle cx="388" cy="112" r="33" fill="#eef2ff"/>
+  <path d="M388 69a43 43 0 0 1 43 43" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" filter="url(#softGlow)"/>
+  <path d="M388 155a43 43 0 0 1-39-25" stroke="#8b5cf6" stroke-width="5" stroke-linecap="round" filter="url(#softGlow)"/>
+  <g transform="translate(364 88) scale(0.5)"><path fill="#090615" d="M48 0C21.5 0 0 21.5 0 48c0 21.2 13.8 39.2 32.9 45.4 2.4.4 3.3-1 3.3-2.3 0-1.1 0-4.1-.1-8.1-13.4 2.9-16.2-6.5-16.2-6.5-2.2-5.6-5.4-7.1-5.4-7.1-4.4-3 .3-2.9.3-2.9 4.9.3 7.5 5 7.5 5 4.3 7.4 11.3 5.3 14.1 4 .4-3.1 1.7-5.3 3.1-6.5-10.7-1.2-21.9-5.3-21.9-23.6 0-5.2 1.9-9.4 5-12.7-.5-1.2-2.2-6.2.5-12.9 0 0 4.1-1.3 13.2 5 3.8-1.1 7.9-1.6 12-1.6s8.2.5 12 1.6c9.1-6.2 13.2-5 13.2-5 2.7 6.7 1 11.7.5 12.9 3.1 3.3 5 7.5 5 12.7 0 18.4-11.2 22.4-21.9 23.6 1.8 1.5 3.3 4.5 3.3 9.1 0 6.5-.1 11.8-.1 13.4 0 1.3.9 2.8 3.3 2.3C82.2 87.2 96 69.2 96 48 96 21.5 74.5 0 48 0Z"/></g>
+
+</svg>

@@ -1,0 +1,55 @@
+<svg width="805" height="220" viewBox="0 0 805 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="undefined activity overview">
+  <defs>
+    <linearGradient id="borderGlow" x1="0" y1="0" x2="805" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38bdf8"/>
+      <stop offset=".45" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="805" height="220" rx="7" fill="none"/>
+  <rect x="1" y="1" width="803" height="218" rx="6" stroke="url(#borderGlow)" stroke-opacity="1"/>
+  <path d="M18 20h34M18 20v34M787 200h-34M787 200v-34" stroke="#38bdf8" stroke-opacity=".8" stroke-width="2" filter="url(#softGlow)"/>
+  
+  <text x="32" y="42" fill="#c084fc" font-family="Segoe UI, Arial, sans-serif" font-size="24">danielgermano-data (Daniel Germano)</text>
+  <text x="32" y="58" fill="#38bdf8" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="800" letter-spacing="2">REGISTRO DE EVOLUCAO</text>
+  <circle stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="42" cy="77" r="5"/><path stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M34 77h3M47 77h3"/>
+  <text x="62" y="86" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="15">14 missoes em 2026</text>
+  <path stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M37 103h9l3 3v12H37zM40 107h6M40 111h6M40 115h4"/>
+  <text x="62" y="118" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="15">3 projetos liberados</text>
+  <circle stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="42" cy="141" r="5"/><path stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M34 141h3M47 141h3"/>
+  <text x="62" y="150" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="15">Entrou no GitHub ha 2 meses</text>
+  <path stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M37 167h9l3 3v12H37zM40 171h6M40 175h6M40 179h4"/>
+  <text x="62" y="182" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="15">Brasil</text>
+  
+  <text x="741" y="38" text-anchor="end" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700">evolucao no ultimo ano</text>
+  <path d="M 325 178 L 325.00 178.00 L 363.18 178.00 L 401.36 178.00 L 439.55 178.00 L 477.73 178.00 L 515.91 178.00 L 554.09 178.00 L 592.27 178.00 L 630.45 178.00 L 668.64 151.78 L 706.82 138.67 L 745.00 60.00 L 745 178 Z" fill="#8b5cf6" fill-opacity=".9"/>
+  <path d="M 325.00 178.00 L 363.18 178.00 L 401.36 178.00 L 439.55 178.00 L 477.73 178.00 L 515.91 178.00 L 554.09 178.00 L 592.27 178.00 L 630.45 178.00 L 668.64 151.78 L 706.82 138.67 L 745.00 60.00" stroke="#38bdf8" stroke-width="2" fill="none" filter="url(#softGlow)"/>
+  <path d="M325 178h420M745 60v118" stroke="#67e8f9" stroke-width="1"/>
+  <text x="325.00" y="195" text-anchor="middle" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11">07/25</text>
+  
+  <text x="401.36" y="195" text-anchor="middle" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11">09/25</text>
+  
+  <text x="477.73" y="195" text-anchor="middle" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11">11/25</text>
+  
+  <text x="554.09" y="195" text-anchor="middle" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11">01/26</text>
+  
+  <text x="630.45" y="195" text-anchor="middle" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11">03/26</text>
+  
+  <text x="706.82" y="195" text-anchor="middle" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11">05/26</text>
+  <text x="745.00" y="195" text-anchor="middle" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11">06/26</text>
+  <path d="M745 178.00h6" stroke="#67e8f9" stroke-width="1"/>
+  <text x="756" y="182.00" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11">0</text>
+  <path d="M745 112.44h6" stroke="#67e8f9" stroke-width="1"/>
+  <text x="756" y="116.44" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11">5</text>
+  <path d="M745 60.00h6" stroke="#67e8f9" stroke-width="1"/>
+  <text x="756" y="64.00" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11">9</text>
+
+
+</svg>
