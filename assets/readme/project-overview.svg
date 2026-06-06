@@ -20,7 +20,7 @@
   <text x="32" y="42" fill="#c084fc" font-family="Segoe UI, Arial, sans-serif" font-size="24">danielgermano-data (Daniel Germano)</text>
   <text x="32" y="58" fill="#38bdf8" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="800" letter-spacing="2">REGISTRO DE EVOLUCAO</text>
   <circle stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="42" cy="77" r="5"/><path stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M34 77h3M47 77h3"/>
-  <text x="62" y="86" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="15">14 missoes em 2026</text>
+  <text x="62" y="86" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="15">18 missoes em 2026</text>
   <path stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M37 103h9l3 3v12H37zM40 107h6M40 111h6M40 115h4"/>
   <text x="62" y="118" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="15">3 projetos liberados</text>
   <circle stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="42" cy="141" r="5"/><path stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M34 141h3M47 141h3"/>
@@ -29,8 +29,8 @@
   <text x="62" y="182" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="15">Brasil</text>
   
   <text x="741" y="38" text-anchor="end" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700">evolucao no ultimo ano</text>
-  <path d="M 325 178 L 325.00 178.00 L 363.18 178.00 L 401.36 178.00 L 439.55 178.00 L 477.73 178.00 L 515.91 178.00 L 554.09 178.00 L 592.27 178.00 L 630.45 178.00 L 668.64 151.78 L 706.82 138.67 L 745.00 60.00 L 745 178 Z" fill="#8b5cf6" fill-opacity=".9"/>
-  <path d="M 325.00 178.00 L 363.18 178.00 L 401.36 178.00 L 439.55 178.00 L 477.73 178.00 L 515.91 178.00 L 554.09 178.00 L 592.27 178.00 L 630.45 178.00 L 668.64 151.78 L 706.82 138.67 L 745.00 60.00" stroke="#38bdf8" stroke-width="2" fill="none" filter="url(#softGlow)"/>
+  <path d="M 325 178 L 325.00 178.00 L 363.18 178.00 L 401.36 178.00 L 439.55 178.00 L 477.73 178.00 L 515.91 178.00 L 554.09 178.00 L 592.27 178.00 L 630.45 178.00 L 668.64 159.85 L 706.82 150.77 L 745.00 60.00 L 745 178 Z" fill="#8b5cf6" fill-opacity=".9"/>
+  <path d="M 325.00 178.00 L 363.18 178.00 L 401.36 178.00 L 439.55 178.00 L 477.73 178.00 L 515.91 178.00 L 554.09 178.00 L 592.27 178.00 L 630.45 178.00 L 668.64 159.85 L 706.82 150.77 L 745.00 60.00" stroke="#38bdf8" stroke-width="2" fill="none" filter="url(#softGlow)"/>
   <path d="M325 178h420M745 60v118" stroke="#67e8f9" stroke-width="1"/>
   <text x="325.00" y="195" text-anchor="middle" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11">07/25</text>
   
@@ -46,10 +46,10 @@
   <text x="745.00" y="195" text-anchor="middle" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11">06/26</text>
   <path d="M745 178.00h6" stroke="#67e8f9" stroke-width="1"/>
   <text x="756" y="182.00" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11">0</text>
-  <path d="M745 112.44h6" stroke="#67e8f9" stroke-width="1"/>
-  <text x="756" y="116.44" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11">5</text>
+  <path d="M745 114.46h6" stroke="#67e8f9" stroke-width="1"/>
+  <text x="756" y="118.46" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11">7</text>
   <path d="M745 60.00h6" stroke="#67e8f9" stroke-width="1"/>
-  <text x="756" y="64.00" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11">9</text>
+  <text x="756" y="64.00" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="11">13</text>
 
 
 </svg>

@@ -24,7 +24,7 @@
   <text x="282" y="82" fill="#38bdf8" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800">0</text>
   <circle stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="40" cy="97" r="5"/><path stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M32 97h3M45 97h3"/>
   <text x="58" y="104" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">XP de commits:</text>
-  <text x="282" y="104" fill="#38bdf8" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800">14</text>
+  <text x="282" y="104" fill="#38bdf8" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800">18</text>
   <circle stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="36" cy="115" r="3"/><circle stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="44" cy="123" r="3"/><path stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M36 118v7M44 113v7M44 113h-4"/>
   <text x="58" y="126" fill="#eef2ff" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Portais PR:</text>
   <text x="282" y="126" fill="#38bdf8" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800">0</text>
